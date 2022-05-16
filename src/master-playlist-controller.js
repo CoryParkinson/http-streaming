@@ -865,6 +865,10 @@ export class MasterPlaylistController extends videojs.EventTarget {
       }
     });
 
+    this.mainSegmentLoader_.on('data', (data) => {
+      this.tech_.trigger({type: 'data', data});
+    });
+
     this.audioSegmentLoader_.on('ended', () => {
       this.logger_('audioSegmentLoader ended');
       this.onEndOfStream();

@@ -2149,6 +2149,7 @@ export default class SegmentLoader extends videojs.EventTarget {
     this.processMetadataQueue_();
 
     this.appendData_(segmentInfo, result);
+    this.trigger('data', result);
   }
 
   updateAppendInitSegmentStatus(segmentInfo, type) {
