@@ -1,12 +1,12 @@
 {
   "name": "@videojs/http-streaming",
-  "version": "2.14.2-optimus3",
+  "version": "2.14.2-optimus-6",
   "description": "Play back HLS and DASH with Video.js, even where it's not natively supported",
   "main": "dist/videojs-http-streaming.cjs.js",
   "module": "dist/videojs-http-streaming.es.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:videojs/http-streaming.git"
+    "url": "https://github.com/CoryParkinson/http-streaming.git"
   },
   "scripts": {
     "prenetlify": "npm run build",
@@ -61,7 +61,7 @@
     "global": "^4.4.0",
     "m3u8-parser": "4.7.1",
     "mpd-parser": "0.21.1",
-    "mux.js": "6.0.1-optimus2",
+    "mux.js": "6.0.1-optimus-4",
     "video.js": "^6 || ^7"
   },
   "peerDependencies": {
